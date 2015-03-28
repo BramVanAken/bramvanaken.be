@@ -17,7 +17,7 @@ dt,dd{float:left;line-height:16px;margin-bottom:8px}
 dl{width:600px}
 dt{width:150px}
 dd{width:450px}
-p{margin-bottom:10px}
+p:not(:last-child){margin-bottom:10px}
 .column:not(:last-child){margin-bottom:15px}
 .error{display:block;color:#ed1c24;margin:10px 0}
 .button{width:60px}
