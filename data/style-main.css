@@ -19,7 +19,6 @@ dl{width:600px}
 dt{width:150px}
 dd{width:450px}
 p:not(:last-child){margin-bottom:10px}
-.column:not(:last-child){margin-bottom:15px}
 .error{display:block;color:#ed1c24;margin:10px 0}
 .button{width:60px}
 .warning{color:#fff}
@@ -30,10 +29,6 @@ p:not(:last-child){margin-bottom:10px}
 img{border:0}
 input.button{font-size:16px;width:100px;padding:5px 20px;background:#4d90fe;color:#fff;border:0}
 textarea.form{height:auto}
-.form:-moz-placeholder{color:#999}
-.form::-moz-placeholder{color:#999}
-.form:-ms-input-placeholder{color:#999}
-.form::-webkit-input-placeholder{color:#999}
 .form{display:block;width:90%;max-width:350px;height:24px;padding:6px 12px;margin-bottom:10px;line-height:1.4;color:#555;vertical-align:middle;border:1px solid #ccc;box-shadow:inset 0 1px 1px rgba(0,0,0,.075)}
 .form:focus{border-color:#4d90fe;outline:0;box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(77,144,254,.6)}
 ::-webkit-scrollbar{width:8px;height:0}

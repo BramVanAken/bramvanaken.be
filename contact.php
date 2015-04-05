@@ -13,27 +13,24 @@
 	<section>
 		<h2 class="titlecard">Contact</h2>
 	</section>
-
 	<section>
 		<h3>Mail</h3>
-		<div class="column cf">
-			<?php
-			$email = $_POST['email'];
-			$comments = $_POST['comments'];
-			if (($_POST) && ($comments != '') && (filter_var($email, FILTER_VALIDATE_EMAIL))) {
-				$comments .= "\n\n\nIP address: ".$_SERVER['REMOTE_ADDR'];
-				mail("bram@bramvanaken.be", "Bramvanaken.be Contact from $email", $comments, "From: $email");
-				echo "Email successfully sent";
-			} else {?>
-				<form method="post">
-					<input type="email" class="form" placeholder="email address" name="email" id="email" size="32" value="<?php echo $email;?>" />
-					<span class="error"><?php if (($_POST) && (!filter_var($email, FILTER_VALIDATE_EMAIL))) {echo "Invalid e-mail address";}?></span>
-				    <textarea name="comments" class="form" placeholder="contents" id="comments" rows="4" cols="26"><?php echo $comments;?></textarea>
-				    <span class="error"><?php if (($_POST) && ($comments == '')) {echo "Contents cannot be empty";}?></span>
-				    <input class="button" type="submit" id="submit" name="sumbit" value="Submit" />
-				</form>
-			<?php }?>
-		</div>
+		<?php
+		$email = $_POST['email'];
+		$comments = $_POST['comments'];
+		if (($_POST) && ($comments != '') && (filter_var($email, FILTER_VALIDATE_EMAIL))) {
+			$comments .= "\n\n\nIP address: ".$_SERVER['REMOTE_ADDR'];
+			mail("bram@bramvanaken.be", "Bramvanaken.be Contact from $email", $comments, "From: $email");
+			echo "Email successfully sent";
+		} else {?>
+			<form method="post">
+				<input type="email" class="form" placeholder="email address" name="email" id="email" size="32" value="<?php echo $email;?>" />
+				<span class="error"><?php if (($_POST) && (!filter_var($email, FILTER_VALIDATE_EMAIL))) {echo "Invalid e-mail address";}?></span>
+			    <textarea name="comments" class="form" placeholder="contents" id="comments" rows="4" cols="26"><?php echo $comments;?></textarea>
+			    <span class="error"><?php if (($_POST) && ($comments == '')) {echo "Contents cannot be empty";}?></span>
+			    <input class="button" type="submit" id="submit" name="sumbit" value="Submit" />
+			</form>
+		<?php }?>
 	</section>
 	<section class="social cf">
 		<a href="//facebook.com/bram.van.aken" id="fb">Facebook</a>
