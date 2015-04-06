@@ -25,7 +25,7 @@ p:not(:last-child){margin-bottom:10px}
 .titlecard{margin-bottom:0}
 .image{position:relative;width:100%}
 .image a{display:block;margin:0 13px}
-.image img{display:block;box-shadow:0 5px 2px -2px rgba(0,0,0,.4)}
+.image img{display:block;box-shadow:0 5px 2px -2px rgba(100,100,100,.4);}
 img{border:0}
 input.button{font-size:16px;width:100px;padding:5px 20px;background:#4d90fe;color:#fff;border:0}
 textarea.form{height:auto}
