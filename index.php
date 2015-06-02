@@ -16,8 +16,8 @@
 .fp-tableCell{display:table-cell;vertical-align:middle;width:100%;height:100%}
 .fp-slidesContainer{float:left;position:relative}
 .fp-controlArrow{position:absolute;z-index:4;top:50%;cursor:pointer;width:0;height:0;border-style:solid;margin-top:-38px}
-.fp-controlArrow.fp-prev{left:15px;width:0;border-width:38.5px 34px 38.5px 0;border-color:transparent #fff transparent transparent}
-.fp-controlArrow.fp-next{right:15px;border-width:38.5px 0 38.5px 34px;border-color:transparent transparent transparent #fff}
+.fp-controlArrow.fp-prev{left:15px;width:0;border-width:38.5px 34px 38.5px 0;border-color:transparent #4d90fe transparent transparent}
+.fp-controlArrow.fp-next{right:15px;border-width:38.5px 0 38.5px 34px;border-color:transparent transparent transparent #4d90fe}
 .fp-scrollable{overflow:scroll}
 .fp-notransition{-webkit-transition:none!important;transition:none!important}
 #fp-nav{position:fixed;z-index:100;margin-top:-32px;top:50%;opacity:1}
@@ -53,14 +53,17 @@ h3{font-size:3em}
 p{font-size:2em}
 .content{position:relative;top:50%;transform:translateY(-50%);text-align:center}
 #section0{background-color:#2EBE21}
-#section0 h1,#section1 h2,#section1 h3{color:#fff}
+#section0 h1{color:#fff}
 #section0 p{color:#fff;opacity:1}
-#section1{background-color:#4d90fe}
-#section1 p{color:#fff;opacity:.6}
+#section1{background-color:#eee}
+#section1 h2,#section1 h3{color:#4d90fe}
+#section1 p{color:#4d90fe;opacity:.6}
 #section2{background-color:#2C3E50}
 #section2 h2{color:#F2F2F2}
 #section2 p{opacity:.6}
 /* CUSTOM CODE BEGINS HERE */
+#slide3{background:#333}
+#slide5{background:#333}
 input.button{font-size:1em;width:100px;padding:5px 20px;background:#fff;color:#222;border:0}
 textarea.form{height:auto}
 .form{display:inline-block;width:75%;max-width:350px;height:24px;padding:6px 12px;margin-bottom:10px;line-height:1.4;color:#555;vertical-align:middle;border:1px solid #ccc;box-shadow:inset 0 1px 1px rgba(0,0,0,.075)}
@@ -69,14 +72,15 @@ textarea.form{height:auto}
 .cf:after{content:"";display:block;clear:both}
 .cf2:after{display:inline-block}
 .valign{vertical-align:middle}
-.github{background:#fff;width:160px;height:84px;margin:0 auto;border-radius:12px;position:relative}
+.github{width:160px;height:84px;margin:0 auto;border-radius:12px;border:5px solid #4d90fe;position:relative}
 .github a{position:absolute;width:100%;height:100%;top:0;left:0;text-decoration:none;padding-top:10px;color:#222}
-dt,dd{line-height:1.1em;margin-bottom:8px;color:#222;}
+dt,dd{line-height:1.1em;margin-bottom:8px;color:#fff}
 dt{border-right:none}
-dl{width:508px;margin:15px auto;text-align:left}
+dl{width:508px;margin:25px auto;text-align:left}
 dt{width:200px;float:left;text-align:right}
 dd{width:300px;float:right}
-span.dl{background:#fff;padding:8px;display:inline-block}
+dd a{color:#ddd}
+span.dl{background:#4d90fe;padding:8px;display:inline-block}
 img{border:0}
 /* Scroll down indicator */
 .arrow,.arrow:after{-webkit-transform:rotate(360deg);border-width:3em 3em 0;width:0;height:0;border-style:solid}
@@ -85,7 +89,7 @@ img{border:0}
 .arrow:after{content:'';position:absolute;top:-3.3em;left:-3em;border-color:#2EBE21 transparent transparent}
 /* Responsive design */
 @media(max-device-width:600px),(max-width:660px){
-dt,dd{background:#fff}
+dt,dd{background:#4d90fe}
 dl{width:85%}
 dt{width:28%;text-align:left}
 dd{width:70%}
@@ -167,7 +171,7 @@ section,ul,li a{box-sizing:border-box}}
 			$comments = $_POST['comments'];
 			if (($_POST) && ($comments != '') && (filter_var($email, FILTER_VALIDATE_EMAIL))) {
 				$comments .= "\n\n\nIP address: ".$_SERVER['REMOTE_ADDR'];
-				mail("bram@bramvanaken.be", "Bramvanaken.be Contact from $email", $comments, "From: $email");
+				mail("bramvanaken@gmail.com", "Bramvanaken.be Contact from $email", $comments, "From: $email");
 				echo "Email successfully sent";
 			} else {?>
 				<form method="post">
@@ -221,7 +225,7 @@ e('[data-anchor="'+l+'"]'),!d.animateAnchor&&k.length&&(d.autoScrolling?L(k.offs
 b){T("fitToSection",a,b)},setKeyboardScrolling:function(a){d.keyboardScrolling=a},setRecordHistory:ga,setScrollingSpeed:M}});</script>
 <script>
 fullpage.initialize('#fullpage', {
-	anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+	anchors: ['home', 'projects', 'contact', '4thpage', 'lastPage'],
 	menu: '#menu',
 	css3:true
 });
