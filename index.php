@@ -112,11 +112,9 @@ section,ul,li a{box-sizing:border-box}}
 			<div class="content">
 				<h2>Projects</h2>
 				<p>&nbsp;</p>
-				<p>
-					<div class="github">
-						<a href="//github.com/BramVanAken"><img class="valign" src="data/img-github.png" alt="GitHub" width="64" height="64" />&nbsp; GitHub</a>
-					</div>
-				</p>
+				<div class="github">
+					<a href="//github.com/BramVanAken"><img class="valign" src="data/img-github.png" alt="GitHub" width="64" height="64" />&nbsp; GitHub</a>
+				</div>
 			</div>
 		</div>
 		<div class="slide" id="slide2">
@@ -136,12 +134,12 @@ section,ul,li a{box-sizing:border-box}}
 				</dl>
 			</div>
 		</div>
-		<div class="slide" id="slide2">
+		<div class="slide" id="slide3">
 			<div class="content">
 				<a href="http://e2r-architecten.be/"><img src="data/img-e2r.png" alt="E2R Architecten website" height="544" /></a>
 			</div>
 		</div>
-		<div class="slide" id="slide2">
+		<div class="slide" id="slide4">
 			<div class="content">
 				<h3>Dsign-ontwerp</h3>
 				<dl class="cf">
@@ -154,7 +152,7 @@ section,ul,li a{box-sizing:border-box}}
 				</dl>
 			</div>
 		</div>
-		<div class="slide" id="slide2">
+		<div class="slide" id="slide5">
 			<div class="content">
 				<a href="dsign/index.html"><img src="data/img-dsign.png" alt="D-sign ontwerp website" height="660" /></a> <!-- height 723 -->
 			</div>
