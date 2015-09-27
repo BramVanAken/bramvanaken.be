@@ -106,7 +106,7 @@ section,ul,li a{box-sizing:border-box}}
 		<div class="content">
 			<h1>Hi,</h1>
 			<p>I'm Bram.</p>
-			<a class="arrow-wrap" href="#secondPage">
+			<a class="arrow-wrap" href="#projects">
 				<span class="arrow"></span>
 			</a>
 		</div>
